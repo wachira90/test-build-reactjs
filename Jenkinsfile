@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh 'git branch: "main", url: "https://github.com/wachira90/test-build-reactjs.git"'
+                sh 'git clone https://github.com/wachira90/test-build-reactjs.git'
             }
         }
         stage('Install dependencies') {
